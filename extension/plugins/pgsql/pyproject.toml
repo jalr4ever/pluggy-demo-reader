@@ -1,0 +1,11 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "reader_pgsql"
+version = "0.0.1"
+dependencies = ["reader"]
+
+[project.entry-points."data-reader"]
+my_pgsql_reader_plugin = "reader_pgsql"

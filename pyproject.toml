@@ -1,0 +1,16 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+
+[project]
+name = "reader"
+dependencies = ["pluggy>=1.0.0"]
+dynamic = ["version"] 
+
+[tool.hatch.version]
+path = "reader/__init__.py"
+
+
+[project.scripts]
+reader-system = "reader.runner:main"
